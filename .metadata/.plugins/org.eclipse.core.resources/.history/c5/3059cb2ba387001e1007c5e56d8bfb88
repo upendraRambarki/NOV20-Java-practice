@@ -1,0 +1,53 @@
+package com.upendra;
+
+public class StudentData implements Comparable<StudentCollection> {
+
+	
+		public int studentId;
+		public String studentName;
+	 
+		public StudentCollection(int studentId, String studentName) {
+			super();
+			this.studentId = studentId;
+			this.studentName = studentName;
+		}
+	 
+		public int getStudentId() {
+			return studentId;
+		}
+	 
+		public void setStudentId(int studentId) {
+			this.studentId = studentId;
+		}
+	 
+		public String getStudentName() {
+			return studentName;
+		}
+	 
+		public void setStudentName(String studentName) {
+			this.studentName = studentName;
+		}
+	 
+		@Override
+		public String toString() {
+			return "Student [studentId=" + studentId + ", studentName=" + studentName + "]";
+		}
+	 
+		@Override
+		public int compareTo(StudentCollection that) {
+	 
+			return Integer.compare(this.studentId, that.studentId);
+		}
+	 
+		public static void main(String[] args) {
+			List<StudentCollection> students = new ArrayList<>(
+					List.of(new StudentCollection(5, "ranga"), new StudentCollection(2, "gopi")));
+			List<StudentCollection> studentCollections = new ArrayList<>(students);
+			System.out.println(studentCollections);
+			Collections.sort(studentCollections);
+			System.out.println(studentCollections);
+		}
+	 
+	
+
+}
