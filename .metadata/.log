@@ -392,3 +392,1096 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:02:35.461
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 1042 and size 1937075758
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.<init>(HashtableOfObject.java:56)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:682)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager$$Lambda$565/0x0000000100730000.run(Unknown Source)
+	... 1 more
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:09:09.637
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.<init>(HashtableOfObject.java:56)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:682)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager$$Lambda$565/0x0000000100730000.run(Unknown Source)
+	... 1 more
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:09:14.178
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.ensureReadyToRun(PatternSearchJob.java:99)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:262)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:09:14.465
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.execute(PatternSearchJob.java:109)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:371)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:11:40.730
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:11:44.769
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.ensureReadyToRun(PatternSearchJob.java:99)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:262)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:11:44.992
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.execute(PatternSearchJob.java:109)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:371)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:26:02.445
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:26:06.367
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.ensureReadyToRun(PatternSearchJob.java:99)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:262)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:26:06.570
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.execute(PatternSearchJob.java:109)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:371)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:29:09.426
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:29:16.018
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.ensureReadyToRun(PatternSearchJob.java:99)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:262)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:29:16.232
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.execute(PatternSearchJob.java:109)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:371)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:29:31.080
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:30:37.217
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:31:09.143
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:32:51.061
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:32:55.080
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.ensureReadyToRun(PatternSearchJob.java:99)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:262)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:32:55.315
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.execute(PatternSearchJob.java:109)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:371)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:33:05.842
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:33:08.530
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.ensureReadyToRun(PatternSearchJob.java:99)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:262)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:33:08.721
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.execute(PatternSearchJob.java:109)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:371)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:33:45.950
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.ensureReadyToRun(PatternSearchJob.java:99)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:262)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:33:46.220
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.execute(PatternSearchJob.java:109)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:371)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:33:47.007
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:34:02.310
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:34:40.508
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:35:17.286
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:35:26.717
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:38:06.954
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:38:20.270
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:39:21.310
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:39:35.182
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:39:51.021
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:40:04.196
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:40:08.612
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-11-21 19:43:46.667
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:45:03.030
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:46:07.699
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:47:10.741
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:47:39.004
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:48:09.788
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:53:01.713
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:53:29.596
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:53:32.634
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.ensureReadyToRun(PatternSearchJob.java:99)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:262)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:53:32.890
+!MESSAGE Error filtering index locations based on qualifier.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:199)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:169)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.query(MetaIndex.java:63)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.runQuery(IndexManager.java:1629)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.findMatchingIndexNames(IndexManager.java:1597)
+	at org.eclipse.jdt.internal.core.search.IndexSelector.getIndexLocations(IndexSelector.java:319)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.selectIndexURLs(JavaSearchParticipant.java:160)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.getIndexes(PatternSearchJob.java:186)
+	at org.eclipse.jdt.internal.core.search.SubTypeSearchJob.getIndexes(SubTypeSearchJob.java:47)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.execute(PatternSearchJob.java:109)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:371)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.legacySearchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:605)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.searchAllPossibleSubTypes(IndexBasedHierarchyBuilder.java:506)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.determinePossibleSubTypes(IndexBasedHierarchyBuilder.java:465)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:158)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:323)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1319)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:950)
+	at org.eclipse.jdt.internal.core.SourceType.newTypeHierarchy(SourceType.java:907)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.addSubtypes(MainMethodSearchEngine.java:130)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:107)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:167)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:56:19.268
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2023-11-21 19:56:24.884
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/C:/Java%20NOV%2020/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 965 and size 1400140393
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:686)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1249)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1225)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:838)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
