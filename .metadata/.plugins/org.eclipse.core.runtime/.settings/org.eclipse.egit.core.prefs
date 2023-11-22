@@ -1,4 +1,10 @@
 GitRepositoriesView.GitDirectories=C\:\\Java NOV 20\\.git;
 GitRepositoriesView.GitDirectories.relative=.git;
+RepositoryGroups.f3c126bd-ef68-4b48-83b0-af4f71139def=java
+RepositoryGroups.group.f3c126bd-ef68-4b48-83b0-af4f71139def=.git
+RepositoryGroups.uuids=f3c126bd-ef68-4b48-83b0-af4f71139def
+RepositorySearchDialogDeepSearch=false
+RepositorySearchDialogSearchPath=C\:\\Java NOV 20
+RepositorySearchDialogSkipHidden=false
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
