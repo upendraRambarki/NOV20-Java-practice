@@ -21,17 +21,22 @@ class StudentContTest {
 	
 	@Autowired
 	MockMvc mockMvc;
+	
+	@Autowired
+	StudentCont studentCont;
+	
 	@MockBean
 	StudentService studentService;
 	
 	
 	@Test
-	void testGetByName() {
+	void testGetBySytudent() {
 		List<Student> list = new ArrayList<>();
 
 		Student student = new Student("Upendra", 44, 40000000);
 		list.add(student);
-		when(studentService.findByName("upendra")).thenReturn(list);
+		when(studentCont.getBySytudent("upendra")).thenReturn(list);
+		assertEquals(list, studentCont.getBySytudent("upendra"));
 	}
 	
 	@Test
@@ -40,7 +45,9 @@ class StudentContTest {
 
 		Student student = new Student("Upendra", 44, 40000000);
 		list.add(student);
-		when(studentService.findBySalary(246465)).thenReturn(list);
+		when(studentCont.getBySalary(40000000)).thenReturn(list);
+		
+		assertEquals(list, studentCont.getBySalary(40000000));
 	}
 	@Test
 	void testGetByAge() {
@@ -48,8 +55,36 @@ class StudentContTest {
 
 		Student student = new Student("Upendra", 44, 40000000);
 		list.add(student);
-		when(studentService.findByAge(0)).thenReturn(list);
+		when(studentCont.getByAge(44)).thenReturn(list);
+		assertEquals(list, studentCont.getByAge(44));
 	}
+	
+	@Test
+	void testPost()
+	{
+		Student student = new Student();
+		when(studentCont.post(student)).thenReturn(student);
+		
+	}
+	
+	@Test
+	void testUpdateStudent()
+	{
+		Student student = new Student("Upendra", 44, 40000000);
+		when(studentCont.updateStudent(student)).thenReturn(student);
+		assertEquals(student, studentCont.updateStudent(student));
+	}
+	@Test
+	void testRemoveStudent()
+	{
+		List<Student> list = new ArrayList<>();
+
+		Student student = new Student("Upendra", 44, 40000000);
+		list.add(student);
+		when(studentCont.removeStudent("upendra")).then(null);	
+		assertEquals(list, studentCont.getBySytudent("upendra"));
+	}
+	
 	
 
 }

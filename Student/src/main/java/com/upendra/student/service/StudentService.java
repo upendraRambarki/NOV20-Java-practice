@@ -29,4 +29,16 @@ public class StudentService {
 	{
 		return repo.save(student);
 	}
+
+	public Student updateStudent(Student student) {
+		// TODO Auto-generated method stub
+		return repo.save(student);
+	}
+
+	public String deleteStudent(String name) {
+		// TODO Auto-generated method stub
+		List<Student> student = repo.findByName(name);
+		repo.deleteAll(student);
+		return "deleted";
+	}
 }
