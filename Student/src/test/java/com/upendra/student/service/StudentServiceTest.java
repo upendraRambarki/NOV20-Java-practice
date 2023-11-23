@@ -68,6 +68,13 @@ class StudentServiceTest {
 
 	}
 	@Test
+	void testPost()
+	{
+		Student student = new Student("Upendra", 44, 40000000);
+		when(studentService.updateStudent(student)).thenReturn(student);
+		assertEquals(student, studentService.post(student));
+	}
+	@Test
 	void testRemoveStudent()
 	{
 		List<Student> list = new ArrayList<>();
