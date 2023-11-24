@@ -8,11 +8,11 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SpringIntermediateDay4Application {
 
-//	@Bean
-//	public ModelMapper modelMapper()
-//	{
-//		return modelMapper();
-//	}
+	@Bean
+	public ModelMapper modelMapper()
+	{
+		return new ModelMapper();
+	}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringIntermediateDay4Application.class, args);

@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import com.upendra.intermediate.dto.UserDto;
 import com.upendra.intermediate.entity.User;
-import com.upendra.intermediate.mapper.UserMapper;
 import com.upendra.intermediate.repository.UserRepository;
 
 import lombok.AllArgsConstructor;
@@ -17,12 +16,13 @@ import lombok.AllArgsConstructor;
 
 
 @Service
+@AllArgsConstructor
 public class UserServiceImpl implements UserService {
 	
 	@Autowired
 	private UserRepository userRepository;
 
-	//ModelMapper modelMapper;
+	private ModelMapper modelMapper;
 
 	/*
 	 * @Override public User createUser(User user) {
@@ -52,20 +52,20 @@ public class UserServiceImpl implements UserService {
 		//to convert userDto to jpa
 		//using mappers
 		
-				User user = UserMapper.mapToUser(userDto);
+				//User user = UserMapper.mapToUser(userDto);
 		
 		//using modelMappers
 		
-		//User user = modelMapper.map(userDto, User.class);
+		User user = modelMapper.map(userDto, User.class);
 		
 				User savedUser = userRepository.save(user);
 				
 				//to covert user to userDto 
 				//using mappers
-				UserDto saveUserDto = UserMapper.mapToUserDto(savedUser);
+//				UserDto saveUserDto = UserMapper.mapToUserDto(savedUser);
 				
 				//using modelMappers
-			//UserDto saveUserDto = modelMapper.map(savedUser, UserDto.class);
+			UserDto saveUserDto = modelMapper.map(savedUser, UserDto.class);
 				
 				return saveUserDto;
 		
@@ -84,10 +84,10 @@ public class UserServiceImpl implements UserService {
 		User userId = userRepository.findByUserId(Id);
 		
 		//using mappers
-		return UserMapper.mapToUserDto(userId);
+		//return UserMapper.mapToUserDto(userId);
 		
 		//using modelMappers
-//		return modelMapper.map(userId, UserDto.class);
+		return modelMapper.map(userId, UserDto.class);
 	}
 
 	
@@ -103,11 +103,11 @@ public class UserServiceImpl implements UserService {
 		List<User> user = userRepository.findAll();
 		
 		//using Mappers
-		return user.stream().map(UserMapper::mapToUserDto)
-				.collect(Collectors.toList());
-//		
-//		return user.stream().map((users)->modelMapper.map(user, UserDto.class))
+//		return user.stream().map(UserMapper::mapToUserDto)
 //				.collect(Collectors.toList());
+//		
+		return user.stream().map((users)->modelMapper.map(user, UserDto.class))
+				.collect(Collectors.toList());
 	}
 
 	/*
@@ -131,9 +131,9 @@ public class UserServiceImpl implements UserService {
 		User updatedUser = userRepository.save(user2);
 		
 		//using mappers
-	return UserMapper.mapToUserDto(updatedUser);
+//	return UserMapper.mapToUserDto(updatedUser);
 		//using modelMappers
-		//return modelMapper.map(updatedUser, UserDto.class);
+		return modelMapper.map(updatedUser, UserDto.class);
 		
 	}
 
