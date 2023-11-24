@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.upendra.intermediate.entity.User;
+import com.upendra.intermediate.dto.UserDto;
 import com.upendra.intermediate.service.UserService;
 
 @RestController
@@ -24,31 +24,31 @@ public class UserController {
 	private UserService userService;
 	
 	@PostMapping("/post")
-	public ResponseEntity<User> createUser(@RequestBody User user)
+	public ResponseEntity<UserDto> createUser(@RequestBody UserDto user)
 	{
-		User user2 = userService.createUser(user);
+		UserDto user2 = userService.createUser(user);
 		return ResponseEntity.ok(user2);
 	}
 	
 	@GetMapping("/get/{id}")
-	public ResponseEntity<User> getById(@PathVariable Long id)
+	public ResponseEntity<UserDto> getById(@PathVariable Long id)
 	{
-		User user = userService.getByUserId(id);
+		UserDto user = userService.getByUserId(id);
 		return ResponseEntity.ok(user);
 	}
 	
 	@GetMapping("/get")
-	public ResponseEntity<List<User>> getAllUsers()
+	public ResponseEntity<List<UserDto>> getAllUsers()
 	{
-		List<User> user = userService.getAllUsers();
+		List<UserDto> user = userService.getAllUsers();
 		return ResponseEntity.ok(user);
 	}
 
 	@PutMapping("update/{id}")
-	public ResponseEntity<User> updateUser(@PathVariable long id, @RequestBody User user)
+	public ResponseEntity<UserDto> updateUser(@PathVariable long id, @RequestBody UserDto userDto)
 	{
-		user.setUserId(id);
-		return ResponseEntity.ok(userService.updateUser(user));
+		userDto.setUserId(id);
+		return ResponseEntity.ok(userService.updateUser(userDto));
 	}
 	
 	@DeleteMapping("/delete/{id}")
