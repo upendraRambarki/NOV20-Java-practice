@@ -3,6 +3,7 @@ package com.upendra.intermediate.service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,8 @@ import com.upendra.intermediate.entity.User;
 import com.upendra.intermediate.mapper.UserMapper;
 import com.upendra.intermediate.repository.UserRepository;
 
+import lombok.AllArgsConstructor;
+
 
 
 @Service
@@ -18,6 +21,8 @@ public class UserServiceImpl implements UserService {
 	
 	@Autowired
 	private UserRepository userRepository;
+
+	//ModelMapper modelMapper;
 
 	/*
 	 * @Override public User createUser(User user) {
@@ -45,13 +50,22 @@ public class UserServiceImpl implements UserService {
 		 
 		
 		//to convert userDto to jpa
+		//using mappers
 		
 				User user = UserMapper.mapToUser(userDto);
-				
+		
+		//using modelMappers
+		
+		//User user = modelMapper.map(userDto, User.class);
+		
 				User savedUser = userRepository.save(user);
 				
-				//to covert user to userDto
+				//to covert user to userDto 
+				//using mappers
 				UserDto saveUserDto = UserMapper.mapToUserDto(savedUser);
+				
+				//using modelMappers
+			//UserDto saveUserDto = modelMapper.map(savedUser, UserDto.class);
 				
 				return saveUserDto;
 		
@@ -69,7 +83,11 @@ public class UserServiceImpl implements UserService {
 		
 		User userId = userRepository.findByUserId(Id);
 		
+		//using mappers
 		return UserMapper.mapToUserDto(userId);
+		
+		//using modelMappers
+//		return modelMapper.map(userId, UserDto.class);
 	}
 
 	
@@ -84,8 +102,12 @@ public class UserServiceImpl implements UserService {
 		
 		List<User> user = userRepository.findAll();
 		
+		//using Mappers
 		return user.stream().map(UserMapper::mapToUserDto)
 				.collect(Collectors.toList());
+//		
+//		return user.stream().map((users)->modelMapper.map(user, UserDto.class))
+//				.collect(Collectors.toList());
 	}
 
 	/*
@@ -107,7 +129,12 @@ public class UserServiceImpl implements UserService {
 		user2.setEmail(user.getEmail());
 		System.out.println(user2);
 		User updatedUser = userRepository.save(user2);
-		return UserMapper.mapToUserDto(updatedUser);
+		
+		//using mappers
+	return UserMapper.mapToUserDto(updatedUser);
+		//using modelMappers
+		//return modelMapper.map(updatedUser, UserDto.class);
+		
 	}
 
 	@Override
