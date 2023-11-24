@@ -16,7 +16,7 @@ import com.upendra.departmentservice.service.DepartmentService;
 import lombok.AllArgsConstructor;
 
 @RestController
-@RequestMapping("department")
+@RequestMapping("/department")
 @AllArgsConstructor
 public class DepartmentController {
 	@Autowired
@@ -27,7 +27,7 @@ public class DepartmentController {
         DepartmentDto savedDepartment = departmentService.saveDepartment(departmentDto);
         return new ResponseEntity<>(savedDepartment, HttpStatus.CREATED);
     }
-	 @GetMapping("{department-code}")
+	 @GetMapping("/{department-code}")
 	    public ResponseEntity<DepartmentDto> getDepartment(@PathVariable("department-code") String departmentCode){
 	        DepartmentDto departmentDto = departmentService.getDepartmentByCode(departmentCode);
 	        return new ResponseEntity<>(departmentDto, HttpStatus.OK);
