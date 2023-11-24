@@ -106,7 +106,7 @@ public class UserServiceImpl implements UserService {
 //		return user.stream().map(UserMapper::mapToUserDto)
 //				.collect(Collectors.toList());
 //		
-		return user.stream().map((users)->modelMapper.map(user, UserDto.class))
+		return user.stream().map((a)->modelMapper.map(user, UserDto.class))
 				.collect(Collectors.toList());
 	}
 

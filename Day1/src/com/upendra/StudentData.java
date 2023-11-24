@@ -45,7 +45,7 @@ public class StudentData implements Comparable<StudentData> {
 	 	
 		public static void main(String[] args) {
 			List<StudentData> students = new ArrayList<>(
-					List.of(new StudentData(5, "ranga"), new StudentData(2, "gopi")));
+					List.of(new StudentData(5, "ranga"), new StudentData(2, "upendra")));
 			List<StudentData> StudentDatas = new ArrayList<>(students);
 			System.out.println(StudentDatas);
 			Collections.sort(StudentDatas);
