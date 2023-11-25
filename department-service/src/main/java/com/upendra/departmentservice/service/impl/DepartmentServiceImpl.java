@@ -1,5 +1,7 @@
 package com.upendra.departmentservice.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,30 +14,44 @@ import com.upendra.departmentservice.service.DepartmentService;
 import lombok.AllArgsConstructor;
 @Service
 @AllArgsConstructor
-public class DepartmentServiceImpl implements DepartmentService{
+public class DepartmentServiceImpl implements DepartmentService
+{	
 	
 	@Autowired
-	 DepartmentRepository departmentRepository;
-
+	DepartmentRepository departmentRepository;
+	
+	
+	
 	@Override
 	public DepartmentDto saveDepartment(DepartmentDto departmentDto) {
-		 // convert department dto to department jpa entity
-        Department department = DepartmentMapper.mapToDepartment(departmentDto);
 
-        Department savedDepartment = departmentRepository.save(department);
-
-        DepartmentDto savedDepartmentDto = DepartmentMapper.mapToDepartmentDto(savedDepartment);
-
-        return savedDepartmentDto;
+		Department department = DepartmentMapper.mapToDepartment(departmentDto);
+		
+		Department saveDepartment = departmentRepository.save(department);
+		
+		DepartmentDto departmentDto2 = DepartmentMapper.mapToDepartmentDto(saveDepartment);
+		
+		return departmentDto2;
 	}
+
+
+
+	@Override
+	public List<Department> getAllDepartment() {
+		
+		return departmentRepository.findAll();
+	}
+
+
 
 	@Override
 	public DepartmentDto getDepartmentByCode(String code) {
+
 		Department department = departmentRepository.findByDepartmentCode(code);
-
-        DepartmentDto departmentDto = DepartmentMapper.mapToDepartmentDto(department);
-
-        return departmentDto;
+		
+		DepartmentDto departmentDto = DepartmentMapper.mapToDepartmentDto(department);
+		
+		return departmentDto;
 	}
 
     

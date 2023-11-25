@@ -6,7 +6,5 @@ import com.upendra.departmentservice.entity.Department;
 
 public interface DepartmentRepository extends  JpaRepository<Department, Long> {
 
-	Department findByDepartmentCode(String code);
-
-
+	Department findByDepartmentCode(String departmentCode);
 }

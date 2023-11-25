@@ -9,4 +9,6 @@ import com.upendra.employeeservice.entity.Employee;
 public interface EmployeeRepository extends JpaRepository<Employee, Long>
 {
 
+	Employee findByEmployeeId(Long id);
+
 }
