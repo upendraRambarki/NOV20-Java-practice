@@ -7,9 +7,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class DepartmentDto {
-	Long id;
-    String departmentName;
-    String departmentDescription;
-    String departmentCode;
+public class ApiResponseDto {
+	
+	private EmployeeDto employeeDto;
+	
+	private DepartmentDto departmentDto;
+
 }
