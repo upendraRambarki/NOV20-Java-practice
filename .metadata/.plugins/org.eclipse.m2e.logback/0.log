@@ -10310,3 +10310,7 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2023-11-26 19:02:35,597 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2023-11-26 19:02:35,611 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2023-11-26 19:02:35,613 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java NOV 20\api-gateway\src\test\resources
+2023-11-26 19:05:40,918 [Worker-89: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.upendra:api-gateway:0.0.1-SNAPSHOT @ C:\Java NOV 20\api-gateway\pom.xml.
+2023-11-26 19:05:41,613 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-11-26 19:05:41,613 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-11-26 19:05:41,615 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java NOV 20\api-gateway\src\test\resources
