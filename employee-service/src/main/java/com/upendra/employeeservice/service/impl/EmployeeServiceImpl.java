@@ -7,6 +7,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import com.upendra.employeeservice.dto.ApiResponseDto;
 import com.upendra.employeeservice.dto.DepartmentDto;
 import com.upendra.employeeservice.dto.EmployeeDto;
+import com.upendra.employeeservice.dto.OrganizationDto;
 import com.upendra.employeeservice.entity.Employee;
 import com.upendra.employeeservice.mapper.EmployeeMapper;
 import com.upendra.employeeservice.repository.EmployeeRepository;
@@ -24,7 +25,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 
 //	RestTemplate restTemplate;
 	
-//	WebClient webClient;
+	WebClient webClient;
 	
 	ApiClient apiClient;
 	
@@ -61,6 +62,12 @@ public class EmployeeServiceImpl implements EmployeeService{
 		 * employee.getDepartmentCode()) .retrieve() .bodyToMono(DepartmentDto.class)
 		 * .block();
 		 */
+		OrganizationDto organizationDto =webClient.get()
+				  							  .uri("http://localhost:8086/organization/get/"+
+						                        employee.getOrganizationCode()) 
+				  							  .retrieve() 
+				  							  .bodyToMono(OrganizationDto.class)
+				  							  .block();
 		
 		DepartmentDto  departmentDto = apiClient.getByCode(employee.getDepartmentCode());
 		
@@ -70,7 +77,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 		ApiResponseDto apiResponseDto = new ApiResponseDto();
 		apiResponseDto.setEmployeeDto(employeeDto);
 		apiResponseDto.setDepartmentDto(departmentDto);
-		
+		apiResponseDto.setOrganizationDto(organizationDto);
 		
 		return apiResponseDto;
 	}

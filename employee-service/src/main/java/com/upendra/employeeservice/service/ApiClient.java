@@ -15,5 +15,8 @@ public interface ApiClient {
 	@GetMapping("department/getByCode/{code}")
 	DepartmentDto getByCode(@PathVariable("code") String code);
 	
+//	@GetMapping("/get/{code}")
+//	OrganizationDto getByOrganizationCode(@PathVariable("code") String organizationCode);
+	
 
 }
