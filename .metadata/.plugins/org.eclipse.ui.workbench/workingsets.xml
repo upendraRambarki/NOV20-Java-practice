@@ -6,9 +6,11 @@
 <item elementID="=department-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=service-registry" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=employee-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=organization-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springboot-kafka" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springboot-kafka-realproject" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=config-server" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=api-gateway" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=organization-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1700459902290_2" label="Window Working Set" name="Aggregate for window 1700459902290"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1700541118527_3" label="Window Working Set" name="Aggregate for window 1700541118527"/>
