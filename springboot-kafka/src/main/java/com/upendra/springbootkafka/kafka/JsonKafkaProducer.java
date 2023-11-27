@@ -14,8 +14,8 @@ import com.upendra.springbootkafka.payload.User;
 @Service
 public class JsonKafkaProducer {
 
-	@Value("${spring.kafka.topic-json.name}")
-	private String topicNameJson;
+//	@Value("${spring.kafka.topic-json.name}")
+//	private String topicNameJson;
 	
     private static final Logger LOGGER = LoggerFactory.getLogger(JsonKafkaProducer.class);
  
@@ -31,7 +31,7 @@ public class JsonKafkaProducer {
 
         Message<User> message = MessageBuilder
                 .withPayload(data)
-                .setHeader(KafkaHeaders.TOPIC, "topicNameJson")
+                .setHeader(KafkaHeaders.TOPIC, "javaGuideJson")
                 .build();
 
         kafkaTemplate.send(message);

@@ -10,8 +10,8 @@ import org.springframework.stereotype.Service;
 public class KafkaProducer {
 
 	
-	@Value("${spring.kafka.topic.name}")
-	private String topicName;
+//	@Value("${spring.kafka.topic.name}")
+//	private String topicName;
 	
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaProducer.class);
 
@@ -24,6 +24,6 @@ public class KafkaProducer {
 
     public void sendMessage(String message){
         LOGGER.info(String.format("Message sent %s", message));
-        kafkaTemplate.send("topicName", message);
+        kafkaTemplate.send("javaguides", message);
     }
 }
