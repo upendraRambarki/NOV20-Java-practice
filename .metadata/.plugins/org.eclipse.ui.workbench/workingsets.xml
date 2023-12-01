@@ -13,7 +13,16 @@
 <item elementID="=api-gateway" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=springboot-rabitmq" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1701320125348_5" label="StrudentManagment" name="StrudentManagment">
+<item elementID="=Spring-Intermediate-Day4-1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=StudentApplicationApiGateway" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AdminMicroservice" type="4"/>
+<item elementID="=Courses" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=EurekaServer" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Mentor" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1700459902290_2" label="Window Working Set" name="Aggregate for window 1700459902290"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1700541118527_3" label="Window Working Set" name="Aggregate for window 1700541118527"/>
+<mruList name="StrudentManagment"/>
 <mruList name="SpringBootMicroservice"/>
 </workingSetManager>

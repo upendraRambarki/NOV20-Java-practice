@@ -18,7 +18,7 @@ public class KafkaTopicConfig {
 	public NewTopic javaGuidesTopics()
 	{
 //		return TopicBuilder.name("topicName")
-		return TopicBuilder.name("javaGuides")
+		return TopicBuilder.name("NewjavaGuides")
 			//	.partitions(2) it will create two partitions
 				.build();
 	}
@@ -27,7 +27,7 @@ public class KafkaTopicConfig {
 	public NewTopic javaGuidesJsonTopics()
 	{
 //		return TopicBuilder.name("topicNameJson")
-		return TopicBuilder.name("javaGuideJson")
+		return TopicBuilder.name("NewjavaGuideJson")
 			//	.partitions(2) it will create two partitions
 				.build();
 	}

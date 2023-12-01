@@ -10,7 +10,7 @@ public class KafkaConsumer {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumer.class);
 
-	@KafkaListener(topics = "javaguides",groupId = "myGroup")
+	@KafkaListener(topics = "NewjavaGuides",groupId = "myGroup1")
 	public void consumer(String message)
 	{
 		LOGGER.info(String.format("Message received -> %s", message));
